@@ -38,7 +38,7 @@
    &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T               &kp Y     &kp U     &kp I     &kp O     &kp P     &trans
    &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G               &kp H     &kp J     &kp K     &kp L     &kp MINUS &trans
    &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B               &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &trans
-                          &mt LCTRL TAB &lt 1 INT5 &mt LSHIFT SPC    &mt LALT RET  &lt 2 INT4 &kp BSPC
+                          &mt LCTRL TAB &lt 1 INT5 &mt LSHFT SPC     &mt LALT RET  &lt 2 INT4 &kp BSPC
                         >;
                 };
                 lower_layer {
@@ -49,9 +49,9 @@
 //                               |   GUI   |         |   SPC   |         |   ENT   |         |  BKSP   |
                         bindings = <
    &trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET &kp AMPS  &kp TILDE &kp EQUAL &kp PIPE  &trans
-   &trans    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp STAR  &kp SEMI  &kp COLON &kp BSLH  &trans
+   &trans    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp ASTRK  &kp SEMI  &kp COLON &kp BSLH &trans
    &trans    &kp LT    &kp RT    &kp LBKT  &kp RBKT  &kp SQT             &kp MINUS &kp FSLH  &kp COMMA &kp DOT   &kp UNDER &trans
-                             &mt LCTRL TAB &trans    &mt LSHIFT SPC   &mt LALT RET &trans    &kp BSPC
+                             &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
                         >;
                 };
                 raise_layer {
@@ -64,7 +64,7 @@
    &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5              &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &trans
    &trans    &kp F2    &kp F4    &kp F6    &kp F7    &kp F10             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp COLON &trans
    &trans    &kp F12   &trans    &trans    &trans    &trans              &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp FSLH  &trans
-                             &mt LCTRL TAB &trans    &mt LSHIFT SPC   &mt LALT RET &trans    &kp BSPC
+                             &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
                         >;
                 };
                 adjust_layer {
@@ -74,7 +74,7 @@
 // |      |      CSE      |          |            |    WS+s    |   W+l    |   |     =   |    1    |    2    |    3    |    .    |      |
 //                                   |    GUI     |            |   SPC    |   |    ENT  |         |    0    |
                         bindings = <
-   &trans &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp STAR  &trans
+   &trans &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &trans
    &trans &kp LA(LS(DEL)) &trans     &kp LC(F1)   &kp LC(F2)   &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &trans
    &trans &kp LC(LS(DEL)) &trans     &trans    &kp LWIN(LS(S)) &kp LWIN(L)    &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &trans
                                      &mt LCTRL TAB &trans   &mt LSHIFT SPC    &mt LALT RET &trans &kp N0
