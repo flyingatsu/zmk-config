@@ -48,14 +48,14 @@
 // |         |    (    |    )    |    {    |    }    |    "    |         |    +    |    *    |    ;    |    :    |    ¥    |      |
 // |         |    <    |    >    |    [    |    ]    |    '    |         |    -    |    /    |    ,    |    .    |    _    |      |
 //                               |   GUI   |         |   SPC   |         |   ENT   |         |  BKSP   |
-                        bindings = <
-   &trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET &kp AMPS  &kp TILDE &kp EQUAL &kp PIPE  &trans
-   &trans    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp KP_MULTIPLY &kp SEMI  &kp COLON &kp BSLH &trans
-   &trans    &kp LT    &kp RT    &kp LBKT  &kp RBKT  &kp SQT             &kp MINUS &kp FSLH  &kp COMMA &kp DOT   &kp UNDER &trans
+//                        bindings = <
+//   &trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET &kp AMPS  &kp TILDE &kp EQUAL &kp PIPE  &trans
+//   &trans    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp STAR  &kp SEMI  &kp COLON &kp BSLH &trans
+//   &trans    &kp LT    &kp RT    &kp LBKT  &kp RBKT  &kp SQT             &kp MINUS &kp FSLH  &kp COMMA &kp DOT   &kp UNDER &trans
 //                             &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
-                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
-                        >;
-                };
+//                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+//                        >;
+//                };
                 raise_layer {
 // --------------------------------------------------------------------------------------------------------------------------------
 // |   TAB   |    1    |    2    |    3    |    4    |    5    |         |    6    |    7    |    8    |    9    |    0    |      |
