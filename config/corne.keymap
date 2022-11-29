@@ -8,20 +8,20 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-//#define DEFAULT 0
-//#define LOWER   1
-//#define RAISE   2
-//#define ADJUST  3
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+#define ADJUST  3
 
-// / {
-//    conditional_layers {
-//        compatible = "zmk,conditional-layers";
-//        tri_layer {
-//            if-layers = <1 2>;
-//            then-layer = <3>;
-//        };
-//    };
-//};
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+};
 
 / {
         keymap {
@@ -38,8 +38,8 @@
    &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T               &kp Y     &kp U     &kp I     &kp O     &kp P     &trans
    &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G               &kp H     &kp J     &kp K     &kp L     &kp MINUS &trans
    &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B               &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &trans
-//                          &mt LCTRL TAB &lt 1 INT5 &mt LSHFT SPC     &mt LALT RET  &lt 2 INT4 &kp BSPC
-                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                          &mt LCTRL TAB &lt 1 INT5 &mt LSHFT SPC     &mt LALT RET  &lt 2 INT4 &kp BSPC
+//                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
 //                lower_layer {
@@ -66,25 +66,25 @@
    &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5              &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &trans
    &trans    &kp F2    &kp F4    &kp F6    &kp F7    &kp F10             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp COLON &trans
    &trans    &kp F12   &trans    &trans    &trans    &trans              &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp FSLH  &trans
-//                             &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
-                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+                             &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
+//                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-//                adjust_layer {
+                adjust_layer {
 // --------------------------------------------------------------------------------------------------------------------------------
 // |      |      ESC      |   BTCLR  |     BT     |     BT3    |   BTCLR  |   |     +   |    7    |    8    |    9    |    *    |      |
 // |      |      CAD      |          |    C+F1    |    C+F2    |   C+F3   |   |     -   |    4    |    5    |    6    |    /    |      |
 // |      |      CSE      |          |            |    WS+s    |   W+l    |   |     =   |    1    |    2    |    3    |    .    |      |
 //                                   |    GUI     |            |   SPC    |   |    ENT  |         |    0    |
-//                        bindings = <
-//   &trans &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &trans
-//   &trans &kp LA(LS(DEL)) &trans     &kp LC(F1)   &kp LC(F2)   &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &trans
-//   &trans &kp LC(LS(DEL)) &trans     &trans    &kp LWIN(LS(S)) &kp LWIN(L)    &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &trans
-//                                     &mt LCTRL TAB &trans   &mt LSHIFT SPC    &mt LALT RET &trans &kp N0
-//                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
-//
-//                        >;
-//                };
+                        bindings = <
+   &trans &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &trans
+   &trans &kp LA(LS(DEL)) &trans     &kp LC(F1)   &kp LC(F2)   &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &trans
+   &trans &kp LC(LS(DEL)) &trans     &trans    &kp LWIN(LS(S)) &kp LWIN(L)    &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &trans
+                                     &mt LCTRL TAB &trans   &mt LSHIFT SPC    &mt LALT RET &trans &kp N0
+                          &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+
+                        >;
+                };
         };
 };
 
