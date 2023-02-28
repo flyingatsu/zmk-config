@@ -46,9 +46,9 @@
 // |         |    <    |    >    |    [    |    ]    |    '    |         |    -    |    /    |    ,    |    .    |    _    |      |
 //                               |   GUI   |         |   SPC   |         |   ENT   |         |  BKSP   |
                         bindings = <
-   &trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET &kp AMPS  &kp TILDE &kp EQUAL &kp PIPE  &trans
-   &trans    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp STAR  &kp SEMI  &kp COLON &kp BSLH  &trans
-   &trans    &kp LT    &kp GT    &kp LBKT  &kp RBKT  &kp SQT             &kp MINUS &kp FSLH  &kp COMMA &kp DOT   &kp UNDER &trans
+   &kp TAB    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET &kp AMPS  &kp TILDE &kp EQUAL &kp PIPE  &kp BSPC
+   &kp LCTRL    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp STAR  &kp SEMI  &kp COLON &kp BSLH  &kp SQT
+   &kp LSHFT    &kp LT    &kp GT    &kp LBKT  &kp RBKT  &kp SQT             &kp MINUS &kp FSLH  &kp COMMA &kp DOT   &kp UNDER &kp ESC
                              &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
                         >;
                 };
@@ -59,9 +59,9 @@
 // |  SHFT   |    F12  |         |         |         |         |         |   HOME  |   PGDN  |   PGUP  |   END   |    /    |      |
 //                               |    GUI  |         |    SPC  |         |   ENT   |         |   BKSP  |
                         bindings = <
-   &trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5              &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &trans
-   &trans    &kp F2    &kp F4    &kp F6    &kp F7    &kp F10             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp COLON &trans
-   &trans    &kp F12   &trans    &trans    &trans    &trans              &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp FSLH  &trans
+   &kp TAB    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5              &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
+   &kp LCTRL    &kp F2    &kp F4    &kp F6    &kp F7    &kp F10             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp COLON &kp SQT
+   &kp LSHFT    &kp F12   &trans    &trans    &trans    &trans              &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp FSLH  &kp ESC
                              &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
                         >;
                 };
@@ -72,9 +72,9 @@
 // |      |      CSE      |          |            |    WS+s    |   W+l    |   |     =   |    1    |    2    |    3    |    .    |      |
 //                                   |    GUI     |            |   SPC    |   |    ENT  |         |    0    |
                         bindings = <
-   &trans &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &trans
-   &trans &kp LC(LA(DEL)) &trans     &kp LC(F1)   &kp LC(F2)   &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &trans
-   &trans &kp LC(LS(DEL)) &trans     &trans      &kp LG(LS(S)) &kp LG(L)      &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &trans
+   &kp TAB &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &kp BSPC
+   &kp LCTRL &kp LC(LA(DEL)) &trans     &kp LC(F1)   &kp LC(F2)   &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &kp SQT
+   &kp LSHFT &kp LC(LS(DEL)) &trans     &trans      &kp LG(LS(S)) &kp LG(L)      &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &kp ESC
                                      &mt LCTRL TAB &trans   &mt LSHIFT SPC    &mt LALT RET &trans &kp N0
                         >;
                 };
