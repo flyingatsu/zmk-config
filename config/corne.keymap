@@ -33,9 +33,9 @@
 //                               |   LCTRL |   LWR   |  SHIFT  |         |   ENT   |   RSE   |   BKSP  |
 //                               |   TAB   |  無変換  |  SPACE  |         |         |   変換   |         |
                         bindings = <
-   &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T               &kp Y     &kp U     &kp I     &kp O     &kp P     &trans
-   &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G               &kp H     &kp J     &kp K     &kp L     &kp MINUS &trans
-   &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B               &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &trans
+   &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T               &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
+   &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G               &kp H     &kp J     &kp K     &kp L     &kp MINUS &kp SQT
+   &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B               &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp ESC
                           &mt LCTRL TAB &lt 1 INT5 &mt LSHFT SPC     &mt LALT RET  &lt 2 INT4 &kp BSPC
                         >;
                 };
@@ -47,7 +47,7 @@
 //                               |   GUI   |         |   SPC   |         |   ENT   |         |  BKSP   |
                         bindings = <
    &trans    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET &kp AMPS  &kp TILDE &kp EQUAL &kp PIPE  &trans
-   &trans    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp STAR  &kp SEMI  &kp COLON &kp BSLH &trans
+   &trans    &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp STAR  &kp SEMI  &kp COLON &kp BSLH &kp ESC&trans
    &trans    &kp LT    &kp GT    &kp LBKT  &kp RBKT  &kp SQT             &kp MINUS &kp FSLH  &kp COMMA &kp DOT   &kp UNDER &trans
                              &mt LCTRL TAB &trans    &mt LSHFT SPC    &mt LALT RET &trans    &kp BSPC
                         >;
