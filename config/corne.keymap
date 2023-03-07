@@ -43,12 +43,12 @@
 // --------------------------------------------------------------------------------------------------------------------------------
 // |         |    !    |  @ ([)  |    #    |    $    |    %    |         |   ^ (=) |   & (^) |   ~ (+) |   = (_) ||(S Int3)|      |
 // |         |  ( (*)  |  ) (()  |   { (}) |  } (|)  |   " (@) |         |   + (:) |   * (") |    ;    |   : (') | ¥ (Int3)|      |
-// |         |  <      |  >      |   [ (]) |  ] (¥)  |   ' (&) |         |   -     |    /    |    ,    |    .    | _ (Int1)|      |
+// |         |  <      |  >      |   [ (]) |  ] (¥)  |   ' (&) |         |   -     |    /    |    ,    |    .    |_(S Int1)|      |
 //                               |   GUI   |         |   SPC   |         |   ENT   |         |  BKSP   |
                         bindings = <
    &none   &kp EXCL  &kp LBKT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET  &kp EQUAL &kp PLUS  &kp UNDER  &kp LS(INT3)  &none
    &none   &kp STAR  &kp LPAR    &kp RBRC  &kp PIPE  &kp AT              &kp COLON  &kp DQT   &kp SEMI  &kp SQT    &kp INT3      &none
-   &none   &kp LT    &kp GT      &kp RBKT  &kp BSLH  &kp AMPS            &kp MINUS  &kp FSLH  &kp COMMA &kp DOT    &kp INT1      &none
+   &none   &kp LT    &kp GT      &kp RBKT  &kp BSLH  &kp AMPS            &kp MINUS  &kp FSLH  &kp COMMA &kp DOT    &kp LS(INT1)  &none
                                  &trans    &trans    &trans              &trans     &trans    &trans
                         >;
                 };
@@ -67,14 +67,14 @@
                 };
                 adjust_layer {
 // --------------------------------------------------------------------------------------------------------------------------------
-// |      |      ESC      |   BTCLR  |     BT     |     BT3    |   BTCLR  |   |     +   |    7    |    8    |    9    |    *    |      |
+// |      |      ESC      |   BTCLR  |     BT     |     BT2    |    BT3   |   |     +   |    7    |    8    |    9    |  * (")  |      |
 // |      |      CAD      |          |    C+F1    |    C+F2    |   C+F3   |   |     -   |    4    |    5    |    6    |    /    |      |
-// |      |      CSE      |          |            |    WS+s    |   W+l    |   |     =   |    1    |    2    |    3    |    .    |      |
+// |      |      CSE      |          |            |    WS+s    |   W+l    |   |   = (_) |    1    |    2    |    3    |    .    |      |
 //                                   |    GUI     |            |   SPC    |   |    ENT  |         |    0    |
                         bindings = <
-   &none   &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &none
+   &none   &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp DQT   &none
    &none   &kp LC(LA(DEL)) &none     &kp LC(F1)   &kp LC(F2)    &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &none
-   &none   &kp LC(LS(DEL)) &none     &none        &kp LG(LS(S)) &kp LG(L)      &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &none
+   &none   &kp LC(LS(DEL)) &none     &none        &kp LG(LS(S)) &kp LG(L)      &kp UNDER &kp N1    &kp N2    &kp N3    &kp DOT   &none
                                      &trans &trans &trans    &mt LALT RET &trans &kp N0
                         >;
                 };
