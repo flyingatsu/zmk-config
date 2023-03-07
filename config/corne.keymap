@@ -33,23 +33,23 @@
 //                               |   LCTRL |   LWR   |  SHIFT  |         |   ALT   |   RSE   |   BKSP  |
 //                               |   TAB   |  無変換  |  SPACE  |         |   ENT   |   変換   |         |
                         bindings = <
-   &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T               &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
-   &kp LCTRL &kp A     &kp S     &kp D     &kp F     &kp G               &kp H     &kp J     &kp K     &kp L     &kp MINUS &kp SQT
-   &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B               &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp ESC
+   &none   &kp Q     &kp W     &kp E     &kp R     &kp T               &kp Y     &kp U     &kp I     &kp O     &kp P     &none
+   &none   &kp A     &kp S     &kp D     &kp F     &kp G               &kp H     &kp J     &kp K     &kp L     &kp MINUS &none
+   &none   &kp Z     &kp X     &kp C     &kp V     &kp B               &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &none
                           &mt LCTRL TAB &lt 1 INT5 &mt LSHFT SPC     &mt LALT RET  &lt 2 INT4 &kp BSPC
                         >;
                 };
                 lower_layer {
 // --------------------------------------------------------------------------------------------------------------------------------
-// |         |    !    |    @    |    #    |    $    |    %    |         |    ^    |    &    |    ~    |    =    |   "|"   |      |
-// |         |    (    |    )    |    {    |    }    |    "    |         |    +    |    *    |    ;    |    :    |    ¥    |      |
-// |         |    <    |    >    |    [    |    ]    |    '    |         |    -    |    /    |    ,    |    .    |    _    |      |
+// |         |    !    |    @    |    #    |    $    |    %    |         |   ^ (=) |   & (^) |   ~ (+) |   = (_) ||(S Int3)|      |
+// |         |  ( (*)  |  ) (()  |   { (}) |  } (|)  |   " ??? |         |   + (:) |   * (") |    ;    |    : ???| ¥ (Int3)|      |
+// |         |  < (>)  |  > ([)  |   [ (') |  ] (¥)  |  ' (-)  |         |   - (~) |   / (,) |  , (.)  |  . (_)  | _ (Int1)|      |
 //                               |   GUI   |         |   SPC   |         |   ENT   |         |  BKSP   |
                         bindings = <
-   &kp TAB      &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET &kp AMPS  &kp TILDE &kp EQUAL &kp PIPE  &kp BSPC
-   &kp LCTRL    &kp LEFT_PARENTHESIS  &kp RPAR  &kp LBRC  &kp RBRC  &kp DQT             &kp PLUS  &kp STAR  &kp SEMI  &kp COLON &kp BSLH  &kp SQT
-   &kp LSHFT    &kp LT    &kp GT    &kp LBKT  &kp RBKT  &kp SQT             &kp MINUS &kp FSLH  &kp COMMA &kp DOT   &kp UNDER &kp ESC
-                             &mt LCTRL TAB &lt 1 INT5 &mt LSHFT SPC    &mt LALT RET &lt 2 INT4 &kp BSPC
+   &none   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET  &kp EQUAL &kp PLUS  &kp UNDER  &kp LS(INT3)  &none
+   &none   &kp STAR  &kp LPAR  &kp RBRC  &kp PIPE  &kp DQT             &kp COLON  &kp DQT   &kp SEMI  &kp COLON &kp INT3  &none
+   &none   &kp GT    &kp LBKT  &kp SQT   &kp BSLH  &kp MINUS           &kp TILDE  &kp COMMA &kp DOT   &kp UNDER &kp INT1 &none
+                             &trans &trans &trans    &trans &trans &trans
                         >;
                 };
                 raise_layer {
@@ -59,10 +59,10 @@
 // |  SHFT   |    F12  |         |         |         |         |         |   HOME  |   PGDN  |   PGUP  |   END   |    /    |      |
 //                               |    GUI  |         |    SPC  |         |   ENT   |         |   BKSP  |
                         bindings = <
-   &kp TAB      &kp N1    &kp N2    &kp N3    &kp N4    &kp N5              &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
-   &kp LCTRL    &kp F2    &kp F4    &kp F6    &kp F7    &kp F10             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp COLON &kp SQT
-   &kp LSHFT    &kp F12   &trans    &trans    &trans    &trans              &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp FSLH  &kp ESC
-                             &mt LCTRL TAB &lt 1 INT5 &mt LSHFT SPC    &mt LALT RET &lt 2 INT4 &kp BSPC
+   &none   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5              &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &none
+   &none   &kp F2    &kp F4    &kp F6    &kp F7    &kp F10             &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp COLON &none
+   &none   &kp F12   &trans    &trans    &trans    &trans              &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp FSLH  &none
+                             &trans &trans &trans    &trans &trans &kp BSPC
                         >;
                 };
                 adjust_layer {
@@ -72,10 +72,10 @@
 // |      |      CSE      |          |            |    WS+s    |   W+l    |   |     =   |    1    |    2    |    3    |    .    |      |
 //                                   |    GUI     |            |   SPC    |   |    ENT  |         |    0    |
                         bindings = <
-   &kp TAB   &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &kp BSPC
-   &kp LCTRL &kp LC(LA(DEL)) &trans     &kp LC(F1)   &kp LC(F2)   &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &kp SQT
-   &kp LSHFT &kp LC(LS(DEL)) &trans     &trans      &kp LG(LS(S)) &kp LG(L)      &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &kp ESC
-                                     &mt LCTRL TAB &lt 1 INT5 &mt LSHIFT SPC    &mt LALT RET &lt 2 INT4 &kp N0
+   &none   &kp ESC         &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp PLUS  &kp N7    &kp N8    &kp N9    &kp ASTRK &none
+   &none   &kp LC(LA(DEL)) &trans     &kp LC(F1)   &kp LC(F2)   &kp LC(F3)     &kp MINUS &kp N4    &kp N5    &kp N6    &kp FSLH  &none
+   &none   &kp LC(LS(DEL)) &trans     &trans      &kp LG(LS(S)) &kp LG(L)      &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DOT   &none
+                                     &trans &trans &trans    &mt LALT RET &trans &kp N0
                         >;
                 };
         };
